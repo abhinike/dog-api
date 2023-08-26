@@ -21,6 +21,10 @@ app.get('/dogs', (req, res) => {
   res.json(dogs);
 });
 
+app.get('/', (req, res) => {
+    res.json(dogs);
+  });
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
